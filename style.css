@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  width: 1440px;
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  height: 280px;
+  background-color: #ffff;
+  border-radius: 10px;
+}
+
+.article-img {
+  width: 300px;
+  height: 280px;
+}
+
+.article-img img {
+  width: 300px;
+  height: 280px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.article-info {
+  width: 500px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-intro {
+  padding: 30px 50px 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.article-intro h1 {
+  font-size: 23px;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+.article-intro p {
+  font-size: 15px;
+  font-weight: 500;
+  color: hsl(214, 17%, 51%);
+}
+
+.article-profile {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px 0 40px;
+  align-items: center;
+}
+.article-profile .profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.article-profile .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.article-profile .profile p {
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+  font-weight: 500;
+}
+.article-profile .profile p b {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+.share-btn {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: hsl(210, 46%, 95%);
+  color: hsl(214, 17%, 51%);
+  cursor: pointer;
+}
+.share-btn:hover {
+  background-color: hsl(214, 17%, 51%);
+  color: #ffff;
+  transition: 0.3s linear;
+}
+
+.share-btn-active {
+  position: absolute;
+  transform: translate(-20px, -85px);
+  border-radius: 10px;
+  width: 270px;
+  height: 55px;
+  background-color: hsl(217, 19%, 35%);
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.share-btn-active p {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+  word-spacing: 5px;
+  cursor: pointer;
+}
+.share-btn-active i {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
